@@ -5,6 +5,8 @@ import User from "./User";
 import Clock from "./Clock";
 import College from "./College";
 import Counter from "./Counter";
+import ProfileCard from "./ProfileCard.jsx";
+import UserProfile from "./Components/UserProfile.jsx";
 
 function App() {
   //Input Value
@@ -20,7 +22,7 @@ function App() {
   const [city, setCity] = useState("amritsar");
 
   // Loop in JSX with map function
-  const userName = ["Ramya", "Shekhar", "Tanu"];
+  // const userName = ["Ramya", "Shekhar", "Tanu"];
   const userData = [
     { name: "Ramya", age: 20, email: "ramya@gmail.com", id: 1 },
     { name: "Shekhar", age: 22, email: "shekhar@gmail.com", id: 2 },
@@ -106,20 +108,22 @@ function App() {
 
   useEffect(() => {
     // callOnce();
-     counterFunction();
+    //  counterFunction();
   }, [counter]);
 
-  function counterFunction(){
-    console.log("Counter Function:",counter);
+  // function counterFunction(){
+  //   console.log("Counter Function:",counter);
     
-  }
+  // }
 
-  function callOnce() {
-    console.log("collOnce called one time");
-  }
+  // function callOnce() {
+  //   console.log("collOnce called one time");
+  // }
 
-  // Handle Props SideEffect with React Js
+  // Component Life Cycle in React Js
      const [count, setCount] = useState(0)
+     const [basicData, setBasicData] = useState(0)
+     const [display, setDisplay] = useState(true)
 
   return (
     <>
@@ -274,14 +278,14 @@ function App() {
       </select>
       <Clock color={color} />
 
-      <h1>12. Nested Looping with Component</h1>
+      <h1>13. Nested Looping with Component</h1>
       {collegeData.map((college, index) => (
         <div key={index}>
           <College college={college} />
         </div>
       ))}
 
-      <h1>13.useEffect in React Js</h1>
+      <h1>14.useEffect in React Js</h1>
       <button onClick={() => setCounter(counter + 1)}>
         Counter: {counter}
       </button>
@@ -289,10 +293,37 @@ function App() {
         Data: {data}
       </button>
 
-      <h1>Handle Props Side effect with React Js</h1>
-       <Counter count={count}/>
-       <button onClick={()=> setCount(count+1)}>count:{count} </button>
+      {/* <h1>15.Handle Props Side effect with React Js</h1> */}
+      <h1>16. Component Life Cycle in React Js</h1>
+       {
+        display ? <Counter count={count} basicData={basicData}/> : null
+       }
 
+       <button onClick={()=> setCount(count+1)}>count:{count} </button>
+       <button onClick={() => setBasicData(basicData + 1)} style={{ marginLeft: "10px" }}>
+       BasicData: {basicData} </button>
+       <button onClick={() => setDisplay(!display)} style={{margin: "10px"}}>Toggle</button>
+     
+      {/* 17. Progile Card Designed with inline css */}
+      <ProfileCard/>
+
+       {/* 18. External CSS in React Js */}
+
+       {/* 19. Module CSS in React Js */}
+       <div style={{display: "flex", gap: "20px" , flexWrap: "wrap"}}>
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       <UserProfile />
+       </div>
     </>
   );
 }
