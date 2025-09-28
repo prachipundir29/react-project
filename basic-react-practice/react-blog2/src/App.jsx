@@ -10,6 +10,8 @@ import UserProfile from "./Components/UserProfile.jsx";
 import StyledComponent from "./Components/StyledComponent.jsx";
 import BootStrap from "./Components/BootStrap.jsx";
 import UseRef from "./Components/UseRef.jsx";
+import UnControlledComponent from "./Components/UnControlledComponent.jsx";
+import ParentComponent from "./Components/ParentComponent.jsx";
 
 function App() {
   //Input Value
@@ -329,6 +331,14 @@ function App() {
 
       {/* 22. UseRef Hook in React Js */}
       <UseRef/>
+
+      {/* 23. UnControlled Component in React Js */}
+      <UnControlledComponent/>
+
+      <hr />
+
+      {/* <h1>24. Call Parent Component Function From Child Component</h1> */}
+      <ParentComponent />
     </>
   );
 }
