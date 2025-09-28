@@ -22,31 +22,8 @@ const ProfileCard = () => {
       <button onClick={()=> upDateTheme('white', 'black')} style={{marginLeft: "10px"}}>Default Theme</button>
       <button onClick={()=> setGrid(!grid)} style={{marginLeft: "10px"}}>Toggle Grid</button>
       <div style={{display: grid?'flex':'block', flexWrap: "wrap"}}>
-        <div style={cardStyle} >
-        <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
-        <h4>Demet Ozdemir</h4>
-        <p >An Artist</p>
-      </div>
-         <div style={cardStyle} >
-        <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
-        <h4>Demet Ozdemir</h4>
-        <p >An Artist</p>
-      </div>
-         <div style={cardStyle} >
-        <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
-        <h4>Demet Ozdemir</h4>
-        <p >An Artist</p>
-      </div>
-         <div style={cardStyle} >
-        <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
-        <h4>Demet Ozdemir</h4>
-        <p >An Artist</p>
-      </div>
-         <div style={cardStyle} >
-        <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
-        <h4>Demet Ozdemir</h4>
-        <p >An Artist</p>
-      </div>
+       
+        
          <div style={cardStyle} >
         <img style={{width: "200px"}} src="https://cdn.pixabay.com/photo/2023/09/04/22/53/ai-generated-8233880_1280.jpg" alt="" />
         <h4>Demet Ozdemir</h4>

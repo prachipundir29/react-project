@@ -7,6 +7,9 @@ import College from "./College";
 import Counter from "./Counter";
 import ProfileCard from "./ProfileCard.jsx";
 import UserProfile from "./Components/UserProfile.jsx";
+import StyledComponent from "./Components/StyledComponent.jsx";
+import BootStrap from "./Components/BootStrap.jsx";
+import UseRef from "./Components/UseRef.jsx";
 
 function App() {
   //Input Value
@@ -315,15 +318,17 @@ function App() {
        <UserProfile />
        <UserProfile />
        <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
-       <UserProfile />
+      
        </div>
+
+      {/* 20. Styled Component in React Js */}
+      <StyledComponent />
+
+      {/* 21. Bootstrap with React Js */}
+      <BootStrap/>
+
+      {/* 22. UseRef Hook in React Js */}
+      <UseRef/>
     </>
   );
 }
