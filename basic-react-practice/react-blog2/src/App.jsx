@@ -12,6 +12,7 @@ import BootStrap from "./Components/BootStrap.jsx";
 import UseRef from "./Components/UseRef.jsx";
 import UnControlledComponent from "./Components/UnControlledComponent.jsx";
 import ParentComponent from "./Components/ParentComponent.jsx";
+import PforwardRef from "./Components/PforwardRef.jsx";
 
 function App() {
   //Input Value
@@ -339,6 +340,10 @@ function App() {
 
       {/* <h1>24. Call Parent Component Function From Child Component</h1> */}
       <ParentComponent />
+
+      <hr />
+      {/* 25. Forward Ref in React Js */}
+     <PforwardRef/>
     </>
   );
 }
