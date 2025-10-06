@@ -15,6 +15,8 @@ import ParentComponent from "./Components/ParentComponent.jsx";
 import PforwardRef from "./Components/PforwardRef.jsx";
 import UseFormStatusHook from "./Components/UseFormStatus.jsx";
 import UseTransitionHook from "./Components/UseTransition.jsx";
+import DerivedState from "./Components/DerivedState.jsx";
+import LiftingState from "./Components/LiftingState.jsx";
 
 function App() {
   //Input Value
@@ -353,6 +355,14 @@ function App() {
       <hr />
       {/* 27. React UseTransition Hook in React Js */}
       <UseTransitionHook />
+
+      <hr />
+      {/* 28. React Memo Hook in React Js */}
+      <DerivedState />
+
+      <hr />
+      {/* 29. React Lifting State Up */}
+      <LiftingState />
     </>
   );
 }
