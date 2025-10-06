@@ -18,6 +18,7 @@ import UseTransitionHook from "./Components/UseTransition.jsx";
 import DerivedState from "./Components/DerivedState.jsx";
 import LiftingState from "./Components/LiftingState.jsx";
 import UpdateObject from "./Components/UpdateObject.jsx";
+import UpdateArray from "./Components/UpdateArray.jsx";
 
 function App() {
   //Input Value
@@ -368,6 +369,10 @@ function App() {
       <hr />
       {/* 30. Update Object in React State */}
       <UpdateObject />
+
+      <hr />
+      {/* 31. Update Array in React State */}
+      <UpdateArray />
     </>
   );
 }
