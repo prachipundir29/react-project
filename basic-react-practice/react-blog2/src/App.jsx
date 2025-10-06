@@ -17,6 +17,7 @@ import UseFormStatusHook from "./Components/UseFormStatus.jsx";
 import UseTransitionHook from "./Components/UseTransition.jsx";
 import DerivedState from "./Components/DerivedState.jsx";
 import LiftingState from "./Components/LiftingState.jsx";
+import UpdateObject from "./Components/UpdateObject.jsx";
 
 function App() {
   //Input Value
@@ -363,6 +364,10 @@ function App() {
       <hr />
       {/* 29. React Lifting State Up */}
       <LiftingState />
+
+      <hr />
+      {/* 30. Update Object in React State */}
+      <UpdateObject />
     </>
   );
 }
