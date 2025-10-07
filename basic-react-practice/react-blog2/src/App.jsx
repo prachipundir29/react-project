@@ -1,24 +1,25 @@
 import { useEffect, useState } from "react";
-// import "./App.css";
+import "./App.css";
 import Skills from "./Skills";
 import User from "./User";
 import Clock from "./Clock";
 import College from "./College";
 import Counter from "./Counter";
 import ProfileCard from "./ProfileCard.jsx";
-import UserProfile from "./Components/UserProfile.jsx";
-import StyledComponent from "./Components/StyledComponent.jsx";
-import BootStrap from "./Components/BootStrap.jsx";
-import UseRef from "./Components/UseRef.jsx";
-import UnControlledComponent from "./Components/UnControlledComponent.jsx";
-import ParentComponent from "./Components/ParentComponent.jsx";
-import PforwardRef from "./Components/PforwardRef.jsx";
-import UseFormStatusHook from "./Components/UseFormStatus.jsx";
-import UseTransitionHook from "./Components/UseTransition.jsx";
-import DerivedState from "./Components/DerivedState.jsx";
-import LiftingState from "./Components/LiftingState.jsx";
-import UpdateObject from "./Components/UpdateObject.jsx";
-import UpdateArray from "./Components/UpdateArray.jsx";
+import UserProfile from "./Components/UserProfile/UserProfile.jsx";
+import StyledComponent from "./Components/StyledComponent/StyledComponent.jsx";
+import BootStrap from "./Components/ReactBootStrap/BootStrap.jsx";
+import UseRef from "./Components/UseRef/UseRef.jsx";
+import UnControlledComponent from "./Components/UncontrolledComponent/UnControlledComponent.jsx";
+import ParentComponent from "./Components/ParentChildComponent/ParentComponent.jsx";
+import PforwardRef from "./Components/ParentChildForwardRef/PforwardRef.jsx";
+import UseFormStatusHook from "./Components/UseFormStatus/UseFormStatus.jsx";
+import UseTransitionHook from "./Components/UseTransitionHook/UseTransition.jsx";
+import DerivedState from "./Components/DerivedState/DerivedState.jsx";
+import LiftingState from "./Components/LiftingStateUp/LiftingState.jsx";
+import UpdateObject from "./Components/UpdateObjectInState/UpdateObject.jsx";
+import UpdateArray from "./Components/UpdateArrayInState/UpdateArray.jsx";
+import UseAction from "./Components/useActionHook/useAction.jsx";
 
 function App() {
   //Input Value
@@ -332,16 +333,13 @@ function App() {
 
       {/* 20. Styled Component in React Js */}
       <StyledComponent />
-
       {/* 21. Bootstrap with React Js */}
-      <BootStrap/>
-
+       <BootStrap />
       {/* 22. UseRef Hook in React Js */}
       <UseRef/>
 
       {/* 23. UnControlled Component in React Js */}
-      <UnControlledComponent/>
-
+      <UnControlledComponent />
       <hr />
 
       {/* <h1>24. Call Parent Component Function From Child Component</h1> */}
@@ -373,6 +371,10 @@ function App() {
       <hr />
       {/* 31. Update Array in React State */}
       <UpdateArray />
+
+      <hr />
+      {/* 32. Custom Hook in React Js */}
+      <UseAction />
     </>
   );
 }
