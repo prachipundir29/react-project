@@ -20,6 +20,7 @@ import LiftingState from "./Components/LiftingStateUp/LiftingState.jsx";
 import UpdateObject from "./Components/UpdateObjectInState/UpdateObject.jsx";
 import UpdateArray from "./Components/UpdateArrayInState/UpdateArray.jsx";
 import UseAction from "./Components/useActionHook/useAction.jsx";
+import UseId from "./Components/UseId Hook/UseId.jsx";
 
 function App() {
   //Input Value
@@ -375,6 +376,10 @@ function App() {
       <hr />
       {/* 32. Custom Hook in React Js */}
       <UseAction />
+
+      <hr />
+      {/* 33. useId Hook in React Js */}
+      <UseId />
     </>
   );
 }
