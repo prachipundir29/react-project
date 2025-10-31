@@ -21,6 +21,8 @@ import UpdateObject from "./Components/UpdateObjectInState/UpdateObject.jsx";
 import UpdateArray from "./Components/UpdateArrayInState/UpdateArray.jsx";
 import UseAction from "./Components/useActionHook/useAction.jsx";
 import UseId from "./Components/UseId Hook/UseId.jsx";
+import Fragment from "./Components/Fragment/Fragment.jsx";
+import CustomHook from "./Components/CustomHook/CutomHook.jsx";
 
 function App() {
   //Input Value
@@ -380,6 +382,14 @@ function App() {
       <hr />
       {/* 33. useId Hook in React Js */}
       <UseId />
+
+      <hr />
+      {/* 34. Fragment in React Js34. Fragment in React Js */}
+      <Fragment />
+      
+      <hr />
+      {/* 35. Custom Hook in React Js */}
+      <CustomHook />
     </>
   );
 }
