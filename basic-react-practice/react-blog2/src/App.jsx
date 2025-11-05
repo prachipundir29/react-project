@@ -23,6 +23,7 @@ import UseAction from "./Components/useActionHook/useAction.jsx";
 import UseId from "./Components/UseId Hook/UseId.jsx";
 import Fragment from "./Components/Fragment/Fragment.jsx";
 import CustomHook from "./Components/CustomHook/CutomHook.jsx";
+import ContextAPI from "./Components/ContextAPI/ContextAPI.jsx";
 
 function App() {
   //Input Value
@@ -390,6 +391,10 @@ function App() {
       <hr />
       {/* 35. Custom Hook in React Js */}
       <CustomHook />
+
+      <hr />
+      {/* 36. Context API in React Js */}
+      <ContextAPI />
     </>
   );
 }
