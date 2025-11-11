@@ -24,6 +24,8 @@ import UseId from "./Components/UseId Hook/UseId.jsx";
 import Fragment from "./Components/Fragment/Fragment.jsx";
 import CustomHook from "./Components/CustomHook/CutomHook.jsx";
 import ContextAPI from "./Components/ContextAPI/ContextAPI.jsx";
+import Router from "./Components/ReactRouter/Router.jsx";
+import Pages from "./Components/ReactPages/Pages.jsx";
 
 function App() {
   //Input Value
@@ -395,6 +397,12 @@ function App() {
       <hr />
       {/* 36. Context API in React Js */}
       <ContextAPI />
+      <hr />
+      {/* 37. React Router in React Js */}
+      <Router />
+      <hr />
+      {/* 38. Basic Pages with React-Routing */}
+       <Pages />
     </>
   );
 }
