@@ -1,33 +1,51 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink, Outlet } from "react-router";
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div className="header">
+    <div>
+      <div className="header">
       <div>
-        <Link className="link" to={"/"}>
+        <NavLink className="link" to={"/"}>
           <h2>Logo</h2>
-        </Link>
+        </NavLink>
       </div>
       <div>
         <ul>
           <li>
-            <Link className="link" to="/">
+            <NavLink className={({isActive})=> isActive?'custom-active link':'link'} to="/">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/login">
+            <NavLink className="link" to="/user/login">
               Login
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="link" to="/about">
+            <NavLink className="link" to="/user/about">
               About
-            </Link>
+            </NavLink>
+          </li>
+           <li>
+            <NavLink className="link" to="/college">
+              College
+            </NavLink>
+          </li>
+           <li>
+            <NavLink className="link" to="/users">
+              User
+            </NavLink>
+          </li>
+           <li>
+            <NavLink className="link" to="/users/list">
+              List
+            </NavLink>
           </li>
         </ul>
       </div>
+    </div>
+    <Outlet />
     </div>
   );
 };
